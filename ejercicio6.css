@@ -1,0 +1,20 @@
+/*Especificidad: 001*/
+body {
+  font-family: Tahoma, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+section {
+  border-width: 0.5em;
+  border-style: double;
+}
+
+nav {
+  border-width: 0.2em;
+  border-style: solid;
+}
+
+
+
+/*Especificidad: 001*/

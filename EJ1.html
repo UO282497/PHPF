@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Ejercicio6</title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="Sergio">
+    <meta name="description" content="Ejercicio6">
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="ejercicio6.css">
+</head>
+
+<body>
+    <h1>Pruebas de usabilidad</h1>
+    <nav>
+        <h2>Menú de navegación</h2>
+        <ul>
+            <li><a href="#1" accesskey="A" tabindex="1">Creación de la base de datos</a> </li>
+            <li><a href="#2" accesskey="B" tabindex="2">Creación de tabla</a> </li>
+            <li><a href="#3" accesskey="C" tabindex="3">Inserción y actualización</a> </li>
+            <li><a href="#4" accesskey="D" tabindex="4">Eliminación de elementos o búsqueda</a> </li>
+            <li><a href="#5" accesskey="E" tabindex="5">Creación de informe de la tabla</a> </li>
+            <li><a href="#6" accesskey="F" tabindex="6">Archivos</a> </li>
+        </ul>
+    </nav>
+    <h2>Panel de opciones</h2>
+    <form action="#" method="post" name="preciosoro" enctype="multipart/form-data">
+        <section id="1">
+            <h2>Creación de la base de datos</h2>
+            <label for="crearbd">Crear base:</label>
+            <input type="submit" id="crearbd" name="crearbd" value="Crear Base de Datos" title="Crear Base de Datos">
+        </section>
+        <section id="2">
+            <h2>Creación de tabla</h2>
+            <label for="create">Crear tabla/s:</label>
+            <input type="submit" id="create" name="create" value="Crear una tabla" title="Crear una tabla">
+        </section>
+        <section id="3">
+            <h2>Inserción y actualización</h2>
+            <label for="id">Dni:</label>
+            <p> <input type="text" id="id" name="id"></p>
+            <label for="nombre">Nombre: </label>
+            <p><input type="text" id="nombre" name="nombre"></p>
+            <label for="apellidos">Apellidos: </label>
+            <p><input type="text" id="apellidos" name="apellidos"></p>
+            <label for="email">E-mail: </label>
+            <p><input type="text" id="email" name="email"></p>
+            <label for="telefono">Teléfono: </label>
+            <p><input type="number" id="telefono" name="telefono"></p>
+            <label for="edad">Edad: </label>
+            <p><input type="number" id="edad" name="edad"></p>
+            <label for="sexo">Sexo: </label>
+            <p><input type="text" id="sexo" name="sexo"></p>
+            <label for="pericia">Pericia: </label>
+            <p><input type="number" id="pericia" name="pericia"></p>
+            <label for="tiempo">Tiempo: </label>
+            <p><input type="number" id="tiempo" name="tiempo"></p>
+            <label for="exito">Éxito en completar la tarea (0 no completada, 1 completada):</label>
+            <p><input type="number" id="exito" name="exito" max="1" min="0">
+            </p>
+            <label for="comentarios">Comentarios: </label>
+            <p><input type="text" id="comentarios" name="comentarios"></p>
+            <label for="propuestas">Propuestas: </label>
+            <p><input type="text" id="propuestas" name="propuestas"></p>
+            <label for="valoracion">Valoración: </label>
+            <p><input type="number" id="valoracion" name="valoracion" max="10" min="0"></p>
+            <input type="submit" id="insert" name="insert" value="Insertar datos en una tabla"
+                title="Insertar datos en una tabla">
+            <input type="submit" id="update" name="update" value="Modificar datos en una tabla"
+                title="Modificar datos en una tabla">
+        </section>
+        <section id="4">
+            <h2>Eliminación de elementos o búsqueda</h2>
+            <label for="idcon">Dni para buscar o eliminar: </label>
+            <p><input type="text" id="idcon" name="idcon"></p>
+
+            <input type="submit" id="delete" name="delete" value="Eliminar datos de una tabla"
+                title="Eliminar datos de una tabla">
+            <input type="submit" id="select" name="select" value="Buscar datos en una tabla"
+                title="Buscar datos en una tabla">
+        </section>
+
+
+
+        <section id="5">
+            <h2>Creación de informe de la tabla</h2>
+            <input type="submit" id="informe" name="informe" value="Generar informe" title="Generar informe">
+        </section>
+        <section id="6">
+            <h2>Archivos</h2>
+            <input type="submit" id="exportar" name="exportar"
+                value="Exportar datos a un archivo en formato CSV los datos desde una tabla de la Base de Datos"
+                title="Exportar datos a un archivo en formato CSV los datos desde una tabla de la Base de Datos">
+
+            <label for="subir">Sube tu CSV para crear las entradas</label>
+            <input type="file" id="subir" name="subir">
+            <input type="submit" value="Cargar datos desde un archivo CSV en una tabla de la Base de Datos"
+                name="subir">
+        </section>
+
+
+
+    </form>
+    <main>
+        <p>
+        </p>
+    </main>
+</body>
+
+</html>
